@@ -21,7 +21,7 @@ resource "aws_iam_role" "ebs_role" {
 EOF
 }
 resource "aws_iam_role" "instance_role" {
-  name = "ec2-instance-role"
+  name = "ec2-instance-role_1"
   assume_role_policy = <<EOF
 {
   "Version": "2008-10-17",

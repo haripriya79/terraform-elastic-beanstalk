@@ -28,7 +28,7 @@ variable "vpc_id" {
   type = string
 }
 variable "public_subnet_id" {
-  type = string
+  type = list(string)
 
 }
 variable "instance_type" {

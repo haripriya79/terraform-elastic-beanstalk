@@ -1,6 +1,10 @@
-variable "subnet_cidr" {
+variable "subnet_cidr_1" {
   type  = string
-  default = "10.0.1.0/24"
+ 
+
+}
+variable "subnet_cidr_2" {
+  type  = string
 
 
 }
@@ -10,7 +14,7 @@ variable "vpc_id" {
 }
 variable "availability_zone" {
   type = string
-  default = "us-east-1"
+  default = "us-east-1a"
   
 }
 

@@ -44,7 +44,7 @@ resource "aws_elastic_beanstalk_environment" "web_environment" {
   setting {
     namespace = "aws:ec2:vpc"
     name      = "Subnets"
-    value     = var.public_subnet_id
+    value     = join(",", var.public_subnet_id)
   }
 
   setting {
